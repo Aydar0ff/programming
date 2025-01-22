@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let old = prompt("В каком году вы родились?");
+old = +old;
+let this_year = 2022;
+let Answer = this_year - old;
+
+if (Answer < 0){
+    // alert("you are" + Answer + " years old");
+    alert("Вы еще не родились, и как вы вообще пишите?");
+}else if(Answer > 30 && Answer < 60){
+    alert("Кризис среднего возраста");
+}else if(Answer < 30){
+    alert("Вам меньше 30")
+}else if (Answer > 60){
+    alert("Вам советуется посетить доктора");
+}else("Извените вышла ошибка, Повтроите пожалуйсто")
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="p4.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-title">Выберите тип карты</h1>
+        <p class="subtitle">Определите подходящий вариант и завершите оформление оплаты</p>
+    </header>
+
+    <main class="content">
+        <div class="card-option">
+            <img src="image/кредитная-карта.jpg" alt="Дебетовая карта" class="card-image">
+            <h2>Дебетовая карта</h2>
+            <p>Простое решение для повседневных покупок. Контролируйте свои расходы и управляйте средствами.</p>
+            <button class="select-btn">Выбрать</button>
+        </div>
+        
+        <div class="card-option">
+            <img src="image/кредитная-карта.jpg" alt="Кредитная карта" class="card-image">
+            <h2>Кредитная карта</h2>
+            <p>Оформите кредитную карту для крупных покупок с гибкими условиями погашения.</p>
+            <button class="select-btn">Выбрать</button>
+        </div>
+        
+        <div class="card-option">
+            <img src="image/кредитная-карта.jpg" alt="Премиум карта" class="card-image">
+            <h2>Премиум карта</h2>
+            <p>Идеальный выбор для путешествий и эксклюзивных предложений. Наслаждайтесь привилегиями.</p>
+            <button class="select-btn">Выбрать</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>У вас остались вопросы? Свяжитесь с нами для консультации.</p>
+        <button class="contact-btn"><a href="index.html">Связаться с поддержкой </a></button>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.card-option').forEach(option => {
+        option.addEventListener('click', () => {
+        alert(`Вы выбрали ${option.innerText}`);
+        });
+        });
+
+    </script>
+</body>
+</html>
